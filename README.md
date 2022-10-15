@@ -8,7 +8,7 @@ This is the demo repository for the Bluetooth Low Energy (BLE) connect Applicati
 
 - Save those value  in Local DB, Room DB and also save it in server.
 
-- Once Successfully Saved the value, trigger the push notifcation from FCM
+- Once Successfully Saved the value, trigger the push notifcation from FCM.
 
 Minimum SDK version - 21
 
@@ -26,7 +26,7 @@ Minimum SDK version - 21
 <img src="https://user-images.githubusercontent.com/94950611/195990696-7a9a6b2c-5e0c-457a-bdbd-3bfa09261ac7.png" width="25%" height="3%">
 
 4. Main Screen - Asking GPS to enable
-- Requires permission above Marshmallow (6.0), to access the hardware identifiers by bluetooth.
+- Requires permission above Marshmallow(6.0), to access the hardware identifiers by bluetooth.
 
 <img src="https://user-images.githubusercontent.com/94950611/195990922-15adc389-2ffa-4a78-9b7f-8892454348ea.png" width="25%" height="3%">
 
@@ -35,7 +35,7 @@ Minimum SDK version - 21
 <img src="https://user-images.githubusercontent.com/94950611/195990963-dfeccd6a-6f68-4440-83a2-468aacff9230.png" width="25%" height="3%">
 
 6. Main Screen - Fetching Nearby BLE Device
-- Click start scan button to initiate the bluetooth scan
+- Click start scan button to initiate the bluetooth scan.
 
 <img src="https://user-images.githubusercontent.com/94950611/195991366-6fef43a5-5c54-457b-8ad8-419cc5d771e3.png" width="25%" height="3%">
 
@@ -44,7 +44,7 @@ Minimum SDK version - 21
 <img src="https://user-images.githubusercontent.com/94950611/195991444-19ff3ae0-0007-4c8b-9ec1-741c1e2b6a38.png" width="25%" height="3%">
 
 8. Main Screen  - Not Supported device
-- Show proper toast message when clicked not supported device 
+- Show proper toast message when clicked not supported device.
 
 <img src="https://user-images.githubusercontent.com/94950611/195991497-7dc07732-16f6-4793-9a73-4ae968224f89.png" width="25%" height="3%">
 
@@ -55,7 +55,13 @@ Minimum SDK version - 21
 10. Second Screen 
 - When clicked the ble supported device and its emitted value with data emittetd device name.
 - Click the Save button, to send this value to the server then DB.
-- Server url need to specify
+- Server url need to specify.
+
+**
+const val BASE_URL = ""
+ 
+ @POST("")
+ fun saveData(@Body bleReadDataRequest: BLEDeviceDataToSaveRequest): Call<CommonApiResponse>**
 
 <img src="https://user-images.githubusercontent.com/94950611/195991581-89d82706-2e93-4bf5-87e9-93ba624e3a21.png" width="25%" height="3%">
 
