@@ -10,6 +10,8 @@ This is the demo repository for the Bluetooth Low Energy (BLE) connect Applicati
 
 - Once Successfully Saved the value, trigger the push notifcation from FCM
 
+Minimum SDK version - 21
+
 1. Screen - Splash Screen 
 	- Here, we get the Firebase token by initiating the firebase token listener. Send this token to server for triggerring the push notification once saved the data.
 	
