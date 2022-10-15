@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BLEDemoApplication</string>
+    <string name="app_permission_rationale">Required Permissions to Perform Better</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="need_location_permission">Location Permission is Needed in Order to Use the App</string>
+    <string name="enable_gps">Enable GPS !…</string>
+    <string name="enabled_gps">Successfully Enabled Your Device GPS !…</string>
+    <string name="not_enable_to_access_bluetooth">Not able to access the Bluetooth</string>
+    <string name="no_result">Sorry No Devices are Available Now :(</string>
+    <string name="unknown_service">Unknown Service</string>
+    <string name="unknown_characteristic">Unknown Characteristic</string>
+    <string name="unable_to_reach_server">Unable to Reach Server. Please Try Again Later !…</string>
+    <string name="successfully_stored_data">Successfully Saved :)</string>
+    <string name="failed_api">Failed To Save Data. Please Try Again Later !…</string>
+    <string name="no_internet">No Network Available. Please Check Your Internet Connection !!!</string>
+    <string name="start_scan">Start Scan</string>
+    <string name="try_again">Please Try Again</string>
+    <string name="ready_to_start_bluetooth_scan">Now Your Device is Ready for Bluetooth Scanning</string>
+    <string name="need_bluetooth_permission">Bluetooth Permission is Needed in Order to Use the App</string>
+    <string name="demo_welcome_note">Welcome \n To \n Demo App !</string>
+    <string name="list_screen">Device List</string>
+    <string name="detail_screen">Detail Screen</string>
+    <string name="save">Save</string>
+    <string name="value">Read Value from the %1$s\n\n\n %2$s</string>
+    <string name="scanning">Scanning…</string>
+    <string name="connection_failed">Connection Failed. Please Try Again</string>
+    <string name="disconnected">Device Disconnected</string>
+    <string name="check_internet_connection">Please Check Your Internet Connection</string>
+    <string name="device_trying_to_connect">Device is trying to Connect</string>
+    <string name="please_give_required_permission">Provide the \n Required Permissions</string>
+    <string name="device_not_supported">Device Not Supported</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "920934234090",
+    "project_id": "bledemoapp-cb2c4",
+    "storage_bucket": "bledemoapp-cb2c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920934234090:android:5a8bee81714ef6ca91e493",
+        "android_client_info": {
+          "package_name": "com.demo.bledemoapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920934234090-8m45d5pbu0vvoti4h2fopi9eeiem8kse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_rYpEn824pl54_-XVloixF2TwLuW8oMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920934234090-8m45d5pbu0vvoti4h2fopi9eeiem8kse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
