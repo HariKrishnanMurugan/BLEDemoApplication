@@ -24,13 +24,20 @@ object BLERepository {
     fun saveData(bleDataToSaveRequest: BLEDeviceDataToSaveRequest, viewModelCallback: BLEGeneralViewModelCallback) {
         // Store the read value in the preference
         BLEApplication.getInstance().getPrefs().readData = bleDataToSaveRequest.bleDeviceData
-        apiManager.saveBLEDeviceData(bleDataToSaveRequest, object : BLERetrofitCallback<CommonApiResponse>(viewModelCallback) {
+        Thread {
+            BLEDatabase.getInstance().bleDao().saveData(BLEDataToSaveInDB(data = bleDataToSaveRequest.bleDeviceData))
+        }.start()
+        viewModelCallback.onSuccess("Success")
+
+        // After specified a server url for the API to save data. we have to uncomment it
+       /* apiManager.saveBLEDeviceData(bleDataToSaveRequest, object : BLERetrofitCallback<CommonApiResponse>(viewModelCallback) {
             override fun <T> onResponse(response: Response<T>) {
+                BLEApplication.getInstance().getPrefs().readData = bleDataToSaveRequest.bleDeviceData
                 Thread {
                     BLEDatabase.getInstance().bleDao().saveData(BLEDataToSaveInDB(data = bleDataToSaveRequest.bleDeviceData))
                 }.start()
                 viewModelCallback.onSuccess("Success")
             }
-        })
+        }) */
     }
 }
