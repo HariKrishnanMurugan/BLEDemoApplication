@@ -55,7 +55,7 @@ Minimum SDK version - 21
 10. Second Screen 
 - When clicked the ble supported device and its emitted value with data emittetd device name.
 - Click the Save button, to send this value to the server then DB.
-- Server url need to specify.
+- Server url need to specify in BLEApiManager file.
 
 **
 const val BASE_URL = ""
